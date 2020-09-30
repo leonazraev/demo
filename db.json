@@ -1,14 +1,61 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
+  "request_status": 1,
+  "request_details": {
+    "totalSteps": 4,
+    "correntStep": 1,
+    "steps": [
+      {
+        "step_method": "upload_documents",
+        "step_name": "ID document",
+        "step_description": "Please upload documents",
+        "step_options": [
+          {
+            "option": "Passport",
+            "documents": [
+              {
+                "document": "Passport Page"
+              }
+            ]
+          },
+          {
+            "option": "Driver's License (Front & Back)",
+            "documents": [
+              {
+                "document": "Front"
+              },
+              {
+                "document": "Back"
+              }
+            ]
+          },
+          {
+            "option": "ID (Front & Back)",
+            "documents": [
+              {
+                "document": "Front"
+              },
+              {
+                "document": "Back"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "step_method": "upload_documents",
+        "step_name": "Proof Of Address",
+        "step_description": "Please upload your proof of address (in the last 3 months",
+        "step_options": [
+          {
+            "option": "Utility Bill",
+            "documents": [
+              {
+                "document": "Full Page (all 4 cornors)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
